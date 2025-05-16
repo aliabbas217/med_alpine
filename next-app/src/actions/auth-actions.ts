@@ -3,7 +3,7 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { adminAuth } from "@/lib/firebase/admin";
-import { getUserOnboardingStatus } from "./onboarding-actions";
+import { getUserOnboardingStatus } from "./user-actions";
 
 export async function createSessionCookie(idToken: string) {
   // Create a session cookie using the Firebase Admin SDK
