@@ -300,10 +300,10 @@ export function SignupForm() {
               <Button
                 type="button"
                 variant="outline"
-                className="w-full border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all duration-200 h-11"
+                className="w-full border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-all duration-200 h-11 text-white"
                 onClick={handleGoogleSignIn}
               >
-                <FaGoogle className="w-4 h-4 mr-2 text-red-500" />
+                <FaGoogle className="w-4 h-4 mr-2 text-white" />
                 Sign up with Google
               </Button>
             </motion.div>
