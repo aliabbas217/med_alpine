@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="675" rx="12" fill="#F8FAFC"/>
+  
+  <!-- Header -->
+  <rect y="0" width="1200" height="60" fill="#0A84FF" fill-opacity="0.1"/>
+  <rect x="24" y="18" width="120" height="24" rx="4" fill="#0A84FF"/>
+  <rect x="1030" y="18" width="70" height="24" rx="12" fill="#0A84FF" fill-opacity="0.2"/>
+  <rect x="1110" y="18" width="70" height="24" rx="12" fill="#0A84FF"/>
+  
+  <!-- Sidebar -->
+  <rect x="0" y="60" width="220" height="615" fill="#F1F5F9"/>
+  <rect x="24" y="100" width="172" height="30" rx="6" fill="#0A84FF" fill-opacity="0.1"/>
+  <rect x="24" y="150" width="172" height="30" rx="6" fill="white"/>
+  <rect x="24" y="200" width="172" height="30" rx="6" fill="white"/>
+  <rect x="24" y="250" width="172" height="30" rx="6" fill="white"/>
+  <rect x="24" y="300" width="172" height="30" rx="6" fill="white"/>
+  
+  <!-- Main Content -->
+  <rect x="250" y="90" width="350" height="40" rx="6" fill="#0F172A"/>
+  <rect x="250" y="140" width="250" height="20" rx="4" fill="#64748B"/>
+  
+  <!-- Cards -->
+  <rect x="250" y="190" width="280" height="150" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="270" y="210" width="150" height="20" rx="4" fill="#0F172A"/>
+  <rect x="270" y="240" width="240" height="10" rx="2" fill="#CBD5E1"/>
+  <rect x="270" y="260" width="180" height="10" rx="2" fill="#CBD5E1"/>
+  <rect x="270" y="290" width="80" height="30" rx="6" fill="#0A84FF"/>
+  
+  <rect x="550" y="190" width="280" height="150" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="570" y="210" width="150" height="20" rx="4" fill="#0F172A"/>
+  <rect x="570" y="240" width="240" height="10" rx="2" fill="#CBD5E1"/>
+  <rect x="570" y="260" width="180" height="10" rx="2" fill="#CBD5E1"/>
+  <rect x="570" y="290" width="80" height="30" rx="6" fill="#0A84FF"/>
+  
+  <rect x="850" y="190" width="280" height="150" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="870" y="210" width="150" height="20" rx="4" fill="#0F172A"/>
+  <rect x="870" y="240" width="240" height="10" rx="2" fill="#CBD5E1"/>
+  <rect x="870" y="260" width="180" height="10" rx="2" fill="#CBD5E1"/>
+  <rect x="870" y="290" width="80" height="30" rx="6" fill="#0A84FF"/>
+  
+  <!-- Chart -->
+  <rect x="250" y="370" width="880" height="260" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="270" y="390" width="200" height="24" rx="4" fill="#0F172A"/>
+  <rect x="270" y="430" width="840" height="180" rx="4" fill="#F8FAFC"/>
+  
+  <!-- Chart Lines -->
+  <path d="M270 520 L1110 520" stroke="#E2E8F0" stroke-width="1"/>
+  <path d="M270 470 L1110 470" stroke="#E2E8F0" stroke-width="1"/>
+  <path d="M270 570 L1110 570" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <!-- Chart Data -->
+  <path d="M290 550 L360 530 L430 490 L500 520 L570 480 L640 450 L710 470 L780 430 L850 460 L920 410 L990 440 L1060 400" stroke="#0A84FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M290 570 L360 540 L430 560 L500 530 L570 550 L640 520 L710 540 L780 510 L850 530 L920 500 L990 520 L1060 490" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Data Points -->
+  <circle cx="290" cy="550" r="5" fill="#0A84FF"/>
+  <circle cx="360" cy="530" r="5" fill="#0A84FF"/>
+  <circle cx="430" cy="490" r="5" fill="#0A84FF"/>
+  <circle cx="500" cy="520" r="5" fill="#0A84FF"/>
+  <circle cx="570" cy="480" r="5" fill="#0A84FF"/>
+  <circle cx="640" cy="450" r="5" fill="#0A84FF"/>
+  <circle cx="710" cy="470" r="5" fill="#0A84FF"/>
+  <circle cx="780" cy="430" r="5" fill="#0A84FF"/>
+  <circle cx="850" cy="460" r="5" fill="#0A84FF"/>
+  <circle cx="920" cy="410" r="5" fill="#0A84FF"/>
+  <circle cx="990" cy="440" r="5" fill="#0A84FF"/>
+  <circle cx="1060" cy="400" r="5" fill="#0A84FF"/>
+  
+  <circle cx="290" cy="570" r="5" fill="#10B981"/>
+  <circle cx="360" cy="540" r="5" fill="#10B981"/>
+  <circle cx="430" cy="560" r="5" fill="#10B981"/>
+  <circle cx="500" cy="530" r="5" fill="#10B981"/>
+  <circle cx="570" cy="550" r="5" fill="#10B981"/>
+  <circle cx="640" cy="520" r="5" fill="#10B981"/>
+  <circle cx="710" cy="540" r="5" fill="#10B981"/>
+  <circle cx="780" cy="510" r="5" fill="#10B981"/>
+  <circle cx="850" cy="530" r="5" fill="#10B981"/>
+  <circle cx="920" cy="500" r="5" fill="#10B981"/>
+  <circle cx="990" cy="520" r="5" fill="#10B981"/>
+  <circle cx="1060" cy="490" r="5" fill="#10B981"/>
+</svg>
