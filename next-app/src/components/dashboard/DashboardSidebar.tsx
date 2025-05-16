@@ -10,7 +10,8 @@ import {
   User,
   FileText,
   NotepadText,
-  ShieldQuestion
+  ShieldQuestion,
+  BrainCog
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -44,9 +45,9 @@ export function DashboardSidebar({ user }: SidebarProps) {
     },
   
     {
-      name: "QnA Chat",
+      name: "Case Analysis",
       href: "/qna",
-      icon: ShieldQuestion,
+      icon: BrainCog,
     },
   ];
 

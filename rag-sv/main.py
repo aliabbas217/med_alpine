@@ -13,6 +13,7 @@ from firebase_admin import credentials, initialize_app, firestore
 from dotenv import load_dotenv
 import logging
 
+
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

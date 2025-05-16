@@ -8,7 +8,7 @@ import {
   X,
   LayoutDashboard, 
   Search, 
-  BookOpen, 
+  BrainCog,
   Bookmark, 
   MessageSquare,
   User,
@@ -59,9 +59,9 @@ export function MobileNav({ user }: MobileNavProps) {
     },
   
     {
-      name: "QnA Chat",
+      name: "Case Analysis",
       href: "/qna",
-      icon: ShieldQuestion,
+      icon: BrainCog,
     },
   ];
 
