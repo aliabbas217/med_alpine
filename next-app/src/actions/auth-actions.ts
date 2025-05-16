@@ -59,15 +59,19 @@ export async function getCurrentUser() {
 export async function checkUserNeedsOnboarding() {
   const user = await getCurrentUser();
   
+  // If not logged in, redirect to login
   if (!user) {
     redirect("/login");
   }
   
+  // Check if user has completed onboarding
   const { completed } = await getUserOnboardingStatus(user.uid);
   
+  // If not completed, redirect to onboarding
   if (!completed) {
     redirect("/onboarding");
   }
   
+  // User is logged in and has completed onboarding
   return user;
 }
