@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+requests
+PyMuPDF
+firebase-admin
+python-dotenv
