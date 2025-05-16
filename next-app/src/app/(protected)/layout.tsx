@@ -2,6 +2,7 @@ import { checkUserNeedsOnboarding } from "@/actions/auth-actions";
 import { DashboardSidebar } from "@/components/dashboard/DashboardSidebar";
 import { MobileNav } from "@/components/dashboard/MobileNav";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { LogoutButton } from "@/components/LogoutButton";
 import { redirect } from "next/navigation";
 
 export default async function ProtectedLayout({
@@ -36,10 +37,10 @@ export default async function ProtectedLayout({
         
         {/* Main content area */}
         <main className="flex-1 pl-0 lg:pl-64">
-          {/* Theme toggle in the top-right corner */}
-          <div className="fixed top-4 right-4 z-50">
-            <ThemeToggle />
-          </div>
+          <div className="fixed top-4 right-4 z-50 flex items-center space-x-3">
+          <ThemeToggle />
+          <LogoutButton variant="header" />
+        </div>
           
           {children}
         </main>

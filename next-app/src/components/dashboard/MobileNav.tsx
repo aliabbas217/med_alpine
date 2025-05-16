@@ -22,6 +22,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { signOut } from "@/actions/auth-actions";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { LogoutButton } from "../LogoutButton";
 
 type MobileNavProps = {
   user: {
@@ -89,8 +90,9 @@ export function MobileNav({ user }: MobileNavProps) {
           </Link>
         </div>
         
-        <div className="flex items-center">
+        <div className="flex items-center space-x-3">
           <ThemeToggle />
+          <LogoutButton variant="header" />
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900">
             {user.photoURL ? (
               <Image
