@@ -4,3 +4,7 @@ requests
 PyMuPDF
 firebase-admin
 python-dotenv
+google-generativeai
+pinecone
+sentence-transformers
+PyMuPDF
