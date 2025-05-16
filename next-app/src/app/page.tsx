@@ -9,6 +9,7 @@ import {
   BarChart3,
   HeartPulse,
   Stethoscope,
+  LogIn,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -16,13 +17,38 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      {/* Navigation Bar */}
+      <div className="relative z-20 w-full border-b border-slate-200/50 dark:border-slate-700/50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm">
+        <div className="container px-4 mx-auto flex items-center justify-between h-16 sm:px-6 lg:px-8">
+          <div className="flex items-center">
+            <div className="relative w-8 h-8 mr-2">
+              <Image src="/logo.svg" alt="MedAlpine Logo" fill className="object-contain" />
+            </div>
+            <span className="text-xl font-bold text-slate-900 dark:text-white">MedAlpine</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Link href="/login">
+              <Button variant="outline" size="sm" className="gap-1.5">
+                <LogIn className="h-4 w-4" />
+                Log in
+              </Button>
+            </Link>
+            <Link href="/signup">
+              <Button size="sm" className="bg-teal-600 hover:bg-teal-700 text-white">
+                Sign up
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-teal-50 to-white dark:from-slate-900 dark:to-slate-800">
         <div className="absolute inset-0 z-0 opacity-30 dark:opacity-20">
           <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
         </div>
 
-        <div className="container relative z-10 px-4 py-24 mx-auto sm:px-6 sm:py-32 lg:px-8">
+        <div className="container relative z-10 px-4 py-16 mx-auto sm:px-6 sm:py-24 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
               <div className="relative w-12 h-12 mr-4">
@@ -42,25 +68,50 @@ export default function Home() {
               Powered by advanced AI for medical professionals
             </div>
 
+            {/* Problem Statement */}
+            <div className="mt-8 p-5 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <div className="flex flex-col items-center">
+                  <p className="text-4xl font-bold text-teal-600 dark:text-teal-400">72</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400 max-w-[150px] text-center">
+                    Days for medical knowledge to double
+                  </p>
+                </div>
+                <div className="h-12 w-px bg-slate-200 dark:bg-slate-700 hidden sm:block"></div>
+                <div>
+                  <p className="text-slate-700 dark:text-slate-300 font-medium text-center sm:text-left">
+                    The modern physician's challenge: <span className="text-teal-600 dark:text-teal-400">evidence-based practice</span> in an era of information overload
+                  </p>
+                  <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 text-center sm:text-left">
+                    MedAlpine helps you navigate the rapidly expanding medical literature with AI-powered insights
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <p className="max-w-2xl mx-auto mt-6 text-lg text-slate-600 dark:text-slate-400">
               Stay on top of the latest medical research tailored to your specialty. Over 1 million papers published
               annually, now filtered and personalized just for you.
             </p>
 
             <div className="flex flex-col items-center justify-center gap-4 mt-8 sm:flex-row">
-              <Button
-                size="lg"
-                className="bg-teal-600 hover:bg-teal-700 text-white gap-2 shadow-lg hover:shadow-xl transition-all"
-              >
-                Get Started <ArrowRight className="w-4 h-4" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-teal-600 text-teal-600 hover:bg-teal-50 dark:border-teal-400 dark:text-teal-400 dark:hover:bg-teal-900/20 gap-1"
-              >
-                <BookOpen className="w-4 h-4 mr-1" /> Watch Demo
-              </Button>
+              <Link href="/signup">
+                <Button
+                  size="lg"
+                  className="bg-teal-600 hover:bg-teal-700 text-white gap-2 shadow-lg hover:shadow-xl transition-all"
+                >
+                  Get Started <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
+              <Link href="/demo">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-teal-600 text-teal-600 hover:bg-teal-50 dark:border-teal-400 dark:text-teal-400 dark:hover:bg-teal-900/20 gap-1"
+                >
+                  <BookOpen className="w-4 h-4 mr-1" /> Watch Demo
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -185,7 +236,7 @@ export default function Home() {
               <div className="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-teal-100 text-teal-600 dark:bg-teal-900/30 dark:text-teal-400">
                 <Brain className="w-6 h-6" />
               </div>
-              <div className="text-4xl font-bold text-teal-600 dark:text-teal-400">73</div>
+              <div className="text-4xl font-bold text-teal-600 dark:text-teal-400">72</div>
               <div className="mt-2 text-sm text-slate-600 dark:text-slate-400">
                 Days in which medical knowledge doubles
               </div>
@@ -314,13 +365,24 @@ export default function Home() {
           <p className="max-w-2xl mx-auto mt-4 text-lg text-teal-100">
             Join thousands of physicians who are staying at the forefront of medical knowledge with MedAlpine.
           </p>
-          <div className="mt-8">
-            <Button
-              size="lg"
-              className="bg-white text-teal-700 hover:bg-teal-50 shadow-lg hover:shadow-xl transition-all gap-2"
-            >
-              Get Started Today <ArrowRight className="w-4 h-4" />
-            </Button>
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href="/signup">
+              <Button
+                size="lg"
+                className="bg-white text-teal-700 hover:bg-teal-50 shadow-lg hover:shadow-xl transition-all gap-2"
+              >
+                Get Started Today <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+            <Link href="/demo">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white/10 gap-1"
+              >
+                <BookOpen className="w-4 h-4 mr-1" /> Watch Demo
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -400,7 +462,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/demo"
                     className="text-slate-600 hover:text-teal-600 dark:text-slate-400 dark:hover:text-teal-400"
                   >
                     Demo
