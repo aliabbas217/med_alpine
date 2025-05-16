@@ -5,7 +5,11 @@ import { signOut } from "@/actions/auth-actions";
 import { useAuth } from "@/contexts/auth-context";
 import { LogOut } from "lucide-react";
 
-export function LogoutButton({ variant = "outline" }) {
+type LogoutButtonProps = {
+  variant?: "outline" | "sidebar" | "header";
+};
+
+export function LogoutButton({ variant = "outline" }: LogoutButtonProps) {
   const { logout } = useAuth();
   
   const handleLogout = async () => {
@@ -25,6 +29,20 @@ export function LogoutButton({ variant = "outline" }) {
         />
         Sign Out
       </button>
+    );
+  }
+
+  if (variant === "header") {
+    return (
+      <Button
+        onClick={handleLogout}
+        variant="outline"
+        size="sm"
+        className="flex items-center gap-1.5 border-slate-200 text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-slate-100"
+      >
+        <LogOut className="h-3.5 w-3.5" />
+        <span>Sign Out</span>
+      </Button>
     );
   }
   
