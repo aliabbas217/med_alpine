@@ -144,7 +144,8 @@ def extract_paper_content(file_path: str) -> str:
                             return p_text[:1000]
             
             for sec in root.findall(".//sec") + root.findall(".//nlm:sec", namespaces):
-                if sec.get("sec-type", "").lower() == "abstract" or "abstract" in sec.text.lower():
+                if (sec.get("sec-type", "").lower() == "abstract" or 
+                    (sec.text is not None and "abstract" in sec.text.lower())):
                     text = "".join(sec.itertext()).strip()
                     if text:
                         logger.info(f"Extracted abstract from sec tag in {file_path}")

@@ -31,8 +31,6 @@ export default async function NewsfeedPage() {
     "pediatrics": "Pediatrics",
     "orthopedics": "Orthopedics",
     "pathology": "Pathology",
-    "general": "General Medicine",
-    "emergency": "Emergency Medicine"
   };
   
   const displayField = fieldMap[profileData.onboarding.field] || "General Medicine";
