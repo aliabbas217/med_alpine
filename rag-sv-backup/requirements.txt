@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+requests
+PyMuPDF
+firebase-admin
+python-dotenv
+google-generativeai
+pinecone
+sentence-transformers
+PyMuPDF
+langchain-community
+duckduckgo_search
