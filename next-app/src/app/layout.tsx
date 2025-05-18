@@ -4,6 +4,8 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner"
 import { AuthProvider } from "@/contexts/auth-context";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const geistSans = Geist({
@@ -42,7 +44,8 @@ export default function RootLayout({
         </AuthProvider>
         <Toaster richColors/>
         </ThemeProvider>
-
+        <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   );
