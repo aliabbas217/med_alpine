@@ -40,7 +40,7 @@ export default function DemoPage() {
             className="w-full h-full"
             preload="metadata"
           >
-            <source src="/videos/demo.mp4" type="video/mp4" />
+            <source src="/videos/demo-final.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
