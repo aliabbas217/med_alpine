@@ -11,9 +11,11 @@ import {
   FileText,
   NotepadText,
   ShieldQuestion,
-  BrainCog
+  BrainCog,
+  BookOpen,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { LogoutButton } from "../LogoutButton";
 
 type SidebarProps = {
   user: {
@@ -46,8 +48,13 @@ export function DashboardSidebar({ user }: SidebarProps) {
   
     {
       name: "Case Analysis",
-      href: "/qna",
+      href: "/caseanalysis",
       icon: BrainCog,
+    },
+    {
+      name: "Research",
+      href: "/research",
+      icon: BookOpen,
     },
   ];
 
@@ -62,6 +69,12 @@ export function DashboardSidebar({ user }: SidebarProps) {
       href: "/settings",
       icon: Settings,
     },
+    {
+      name: "",
+      href: "/logout",
+      icon: LogoutButton,
+    },
+
   ];
 
   return (

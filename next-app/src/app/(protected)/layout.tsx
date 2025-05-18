@@ -38,8 +38,8 @@ export default async function ProtectedLayout({
         {/* Main content area */}
         <main className="flex-1 pl-0 lg:pl-64">
           <div className="fixed top-4 right-4 z-50 flex items-center space-x-3">
-          <ThemeToggle />
-          <LogoutButton variant="header" />
+          {/* <ThemeToggle /> */}
+          {/* <LogoutButton variant="header" /> */}
         </div>
           
           {children}

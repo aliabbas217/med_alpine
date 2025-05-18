@@ -16,7 +16,9 @@ import {
   FileText,
   LogOut,
   ShieldQuestion,
-  NotepadText
+  NotepadText,
+  BookOpen,
+
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -60,8 +62,13 @@ export function MobileNav({ user }: MobileNavProps) {
   
     {
       name: "Case Analysis",
-      href: "/qna",
+      href: "/caseanalysis",
       icon: BrainCog,
+    },
+    {
+      name: "Research",
+      href: "/research",
+      icon: BookOpen,
     },
   ];
 

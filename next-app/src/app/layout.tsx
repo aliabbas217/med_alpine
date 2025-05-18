@@ -40,7 +40,7 @@ export default function RootLayout({
         <AuthProvider>
         {children}
         </AuthProvider>
-        <Toaster />
+        <Toaster richColors/>
         </ThemeProvider>
 
       </body>

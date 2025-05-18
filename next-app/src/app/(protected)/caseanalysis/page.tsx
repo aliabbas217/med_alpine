@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { CaseAnalysisForm } from "@/components/qna/CaseAnalysisForm";
+import { CaseAnalysisForm } from "@/components/caseanalysis/CaseAnalysisForm";
 import { checkUserNeedsOnboarding } from "@/actions/auth-actions";
 
 export const metadata: Metadata = {
