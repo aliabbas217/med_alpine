@@ -40,16 +40,16 @@ export function FieldStep({ value, onChange, onNext, onPrev }: FieldStepProps) {
       name: "Pathology",
       icon: <Microscope className="w-6 h-6" />
     },
-    {
-      id: "general",
-      name: "General Medicine",
-      icon: <Stethoscope className="w-6 h-6" />
-    },
-    {
-      id: "emergency",
-      name: "Emergency Medicine",
-      icon: <Activity className="w-6 h-6" />
-    }
+    // {
+    //   id: "general",
+    //   name: "General Medicine",
+    //   icon: <Stethoscope className="w-6 h-6" />
+    // },
+    // {
+    //   id: "emergency",
+    //   name: "Emergency Medicine",
+    //   icon: <Activity className="w-6 h-6" />
+    // }
   ];
 
   return (
