@@ -1,3 +1,4 @@
 firebase-credentials.json
 oa_file_list.csv
 .env
+*.pyc

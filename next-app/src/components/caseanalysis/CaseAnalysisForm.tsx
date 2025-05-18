@@ -13,7 +13,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { BrainCog, Loader2, Check, Clipboard } from "lucide-react";
-import { CaseAnalysisResponse } from "@/components/qna/CaseAnalysisResponse";
+import { CaseAnalysisResponse } from "@/components/caseanalysis/CaseAnalysisResponse";
 import { Badge } from "@/components/ui/badge";
 
 const specialtyOptions = [
@@ -70,7 +70,7 @@ export function CaseAnalysisForm({ userId }: CaseAnalysisFormProps) {
     setError(null);
     
     try {
-      const response = await fetch(`${process.env.CASEANALYSIS_API_BASE_URL || 'http://localhost:8001'}/analyze-case`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_UR || 'http://localhost:8001'}/analyze-case`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
