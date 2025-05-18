@@ -18,7 +18,6 @@ export async function fetchNewsfeedForUser(userId: string): Promise<Paper[]> {
     
     // Default to general medicine if no field is specified
     const niche = userProfile.onboarding.field || "general";
-
     // Fetch papers from the API
     const apiUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/newsfeed`;
     const response = await fetch(apiUrl, {

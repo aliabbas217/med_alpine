@@ -8,8 +8,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict
 ## import csv
 
-
-
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

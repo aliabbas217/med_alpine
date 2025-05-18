@@ -15,7 +15,6 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-
 logger = logging.getLogger(__name__)
 
 NCBI_API_KEY = os.getenv("NCBI_API_KEY")

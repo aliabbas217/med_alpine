@@ -6,7 +6,6 @@ import logging
 from utils import fetch_open_access_pmcids, get_paper_metadata, extract_paper_content, parse_date
 
 logger = logging.getLogger(__name__)
-
 class NewsfeedRequest(BaseModel):
     niche: str
     months: int = 6  # Default to last 6 months
