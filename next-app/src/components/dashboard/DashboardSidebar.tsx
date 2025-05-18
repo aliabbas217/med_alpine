@@ -71,7 +71,7 @@ export function DashboardSidebar({ user }: SidebarProps) {
     },
     {
       name: "",
-      href: "/logout",
+      href: "/login",
       icon: LogoutButton,
     },
 
