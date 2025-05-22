@@ -72,7 +72,7 @@ export default function Home() {
             <div className="mt-8 p-5 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                 <div className="flex flex-col items-center">
-                  <p className="text-4xl font-bold text-teal-600 dark:text-teal-400">72</p>
+                  <p className="text-4xl font-bold text-teal-600 dark:text-teal-400">73</p>
                   <p className="text-sm text-slate-600 dark:text-slate-400 max-w-[150px] text-center">
                     Days for medical knowledge to double
                   </p>
